@@ -1,0 +1,6 @@
+hive -e 'set hive.cli.print.header=true; select * from base_final' | sed 's/[\t]/;/g'  > /home/cloudera/Downloads/base_analitica.csv
+hive -e 'set hive.cli.print.header=true; select * from base_sumarizada' | sed 's/[\t]/;/g'  > /home/cloudera/Downloads/base_sumarizada.csv
+hive -e 'set hive.cli.print.header=true; select * from residencia_mean' | sed 's/[\t]/;/g'  > /home/cloudera/Downloads/residencia_mean.csv
+hive -e 'set hive.cli.print.header=true; select * from MACRO_REGIAO_mean' | sed 's/[\t]/;/g'  > /home/cloudera/Downloads/MACRO_REGIAO_mean.csv
+hive -e 'set hive.cli.print.header=true; select * from tp_escola_mean' | sed 's/[\t]/;/g'  > /home/cloudera/Downloads/tp_escola_mean.csv
+hive -e 'set hive.cli.print.header=true; select * from idade_mean' | sed 's/[\t]/;/g'  > /home/cloudera/Downloads/idade_mean.csv
